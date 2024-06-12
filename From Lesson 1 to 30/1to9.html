@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>1to9</title>
+    <!-- Assignment 1 -->
+    <script>
+      // Code One
+        // document.getElementById("el").style.color = "red";
+        /*
+        The previous code will not be effective because we call the HTML element before 
+        the page render it, so that JS call element and will not find it.
+        */
+    </script>
+    <script>
+      // Code Two
+        window.onload = function () {
+        document.getElementById("el").style.color = "red";
+        };
+        /*
+        The previous code will be effective because
+        we ask from js code to be executed after render all HTML elements.
+        */
+    </script>
+</head>
+<body>
+    <!-- <h1 id="el">Page Title</h1> -->
+    <script>
+      // Code Three
+        document.getElementById("el").style.color = "red";
+        /*
+        The previous code will be effective because
+        JS code call HTML element after rendering it.
+        */
+    </script>
+    <!-- End of Assignmnet 1 -->
+
+    <script src="1to9.js"></script>
+</body>
+</html>
